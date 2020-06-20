@@ -30,3 +30,7 @@ Explanation: The array cannot be partitioned into equal sum subsets.
 3. Then we use dp appraoch to construct a boolean list that contains all possible sums upto & including specific index
 possible_sums[x] = {possible_sums[x-1]} union {possible_sums[x-1] + nums[x]}
 4. Finally we check if the a sum is possible for index total_sum // 2
+
+## Challenge faced:
+1. If update the possible sums in the main loop then the loop will error and go into index out of bounds as there will be update one after another
+=> Approach used to save the possible sums in a different set and update the original list after the loop ends
