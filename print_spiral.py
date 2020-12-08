@@ -1,6 +1,13 @@
 from typing import List
 
 def get_matrix_as_spiral(matrix: List[List[int]]) -> List[int]:
+    """
+    Key takeaway: Use meaningful variable names for the top, bottom, left and right
+    Use the check for the size of the number of elements and use it in each loop
+    Update the ends at the end of each loop
+
+    Solution approach: https://www.youtube.com/watch?v=BdQ2AkaTgOA&ab_channel=KevinNaughtonJr.
+    """
     if matrix is None:
         return None
     if len(matrix) == 0:
